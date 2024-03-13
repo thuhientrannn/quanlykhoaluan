@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="baseLayout" template="/WEB-INF/layout/base.jsp"   >
+        <put-attribute name="tittle" value="..." />
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+        <put-attribute name="content" value="BASE"/>
+    </definition>
+    <definition name="user" extends="baseLayout">
+        <put-attribute name="tittle" value="Quản lý người dùng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/user.jsp" />
+    </definition>
+    <definition name="user-item" extends="baseLayout">
+        <put-attribute name="tittle" value="Người dùng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/useritem.jsp" />
+    </definition>
+    <definition name="council" extends="baseLayout">
+        <put-attribute name="tittle" value="Hội đồng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/council.jsp" />
+    </definition>
+    <definition name="thesis" extends="baseLayout">
+        <put-attribute name="tittle" value="Quản lý khóa luận" />
+        <put-attribute name="content" value="/WEB-INF/jsp/thesis.jsp" />
+    </definition>
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="tittle" value="Đăng nhập" />
+        <put-attribute name="content" value="/WEB-INF/jsp/login.jsp" />
+    </definition>
+    <definition name="student" extends="baseLayout">
+        <put-attribute name="tittle" value="Sinh viên" />
+        <put-attribute name="content" value="/WEB-INF/jsp/student.jsp" />
+    </definition>
+    <definition name="account" extends="baseLayout">
+        <put-attribute name="tittle" value="Tài khoản" />
+        <put-attribute name="content" value="/WEB-INF/jsp/account.jsp" />
+    </definition>
+    <definition name="password" extends="baseLayout">
+        <put-attribute name="tittle" value="Đổi mật khẩu" />
+        <put-attribute name="content" value="/WEB-INF/jsp/password.jsp" />
+    </definition>
+    <definition name="criteria" extends="baseLayout">
+        <put-attribute name="tittle" value="Chấm điểm khóa luận" />
+        <put-attribute name="content" value="/WEB-INF/jsp/criteria.jsp" />
+    </definition>
+    <definition name="addThesis" extends="baseLayout">
+        <put-attribute name="tittle" value="Thêm khóa luận" />
+        <put-attribute name="content" value="/WEB-INF/jsp/addThesis.jsp" />
+    </definition>
+    <definition name="major" extends="baseLayout">
+        <put-attribute name="tittle" value="Quản lý khoa" />
+        <put-attribute name="content" value="/WEB-INF/jsp/major.jsp" />
+    </definition>
+    <definition name="class" extends="baseLayout">
+        <put-attribute name="tittle" value="Quản lý lớp" />
+        <put-attribute name="content" value="/WEB-INF/jsp/class.jsp" />
+    </definition>
+    <definition name="thesisScore" extends="baseLayout">
+        <put-attribute name="tittle" value="Điểm khóa luận" />
+        <put-attribute name="content" value="/WEB-INF/jsp/thesisScore.jsp" />
+    </definition>
+    <definition name="stats" extends="baseLayout">
+        <put-attribute name="tittle" value="Thống kê" />
+        <put-attribute name="content" value="/WEB-INF/jsp/stats.jsp" />
+    </definition>
+    <definition name="thesisItem" extends="baseLayout">
+        <put-attribute name="tittle" value="Chi tiết khóa luận" />
+        <put-attribute name="content" value="/WEB-INF/jsp/thesisItem.jsp" />
+    </definition>
+    <definition name="score" extends="baseLayout">
+        <put-attribute name="tittle" value="Chấm điểm khóa luận" />
+        <put-attribute name="content" value="/WEB-INF/jsp/score.jsp" />
+    </definition>
+    <definition name="useritem" extends="baseLayout">
+        <put-attribute name="tittle" value="Tài khoản" />
+        <put-attribute name="content" value="/WEB-INF/jsp/useritem.jsp" />
+    </definition>
+    <definition name="councilitem" extends="baseLayout">
+        <put-attribute name="tittle" value="Chi tiết hội đồng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/councilitem.jsp" />
+    </definition>
+    <definition name="accessDenied" extends="baseLayout">
+        <put-attribute name="tittle" value="Không thề truy cập" />
+        <put-attribute name="content" value="/WEB-INF/jsp/accessDenied.jsp" />
+    </definition>
+    <definition name="studentThesis" extends="baseLayout">
+        <put-attribute name="tittle" value="Khóa luận" />
+        <put-attribute name="content" value="/WEB-INF/jsp/studentThesis.jsp" />
+    </definition>
+</tiles-definitions>
+
